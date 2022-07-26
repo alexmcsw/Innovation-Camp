@@ -1,0 +1,62 @@
+# 2022 Innovation Camp Coding Challenge
+
+## Table of Contents
+- Introduction
+- Instructions
+    1. Load the data
+    2. Clean the data
+    3. Create a plot
+    4. Do some analysis
+    5. Create a new plot
+    6. Prepare your findings
+    7. Prepare a report
+- Further Directions
+
+## Introduction
+
+Rmarkdown files consist of blocks or chunks of code written in R and text written in markdown. You can run the code chunk by chunk or by knitting the entire document at once.
+
+In the following chunk we load packages we will need and set preferences for knitting the document. Anything behind a "#" symbol is "commented code" and will be ignored by the compiler.
+```{r, echo = FALSE, include = FALSE}
+# Load libraries
+library(cansim) # read in CODR/NDM tables
+library(dplyr) # allows for piping (%>%)
+library(tidyr) # allows for shaping the data
+library(svDialogs) # allows for the pop-up window
+library(plotly) # for creating plots
+
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+```
+
+## Instructions
+
+### 1. Load the data
+Today we will be working with [Stocks of specified dairy products](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3210000101#tables). This data is stored in a CODR (Census something something??) table
+```{r, echo = FALSE, include = FALSE}
+# Load our data 
+df <- get_cansim(32-10-0001-01)
+
+```
+
+
+### 2. Clean the data
+In short, "cleaning data" means to prepare it for analysis. Removing empty values, converting values to the same format or otherwise manipulating your data to improve the quality are all examples of cleaning your data.
+
+### 3. Create a plot
+
+### 4. Do some analysis
+
+### 5. Create a new plot
+
+### 6. Prepare your findings
+
+### 7. Prepare a report
+
+## Further Directions
+
+1. Optimization:
+Data.table is a structure that is faster than the built-in data.frame structure. Can you rewrite the code to make use of this structure instead?
+
+
+
+
