@@ -279,61 +279,6 @@ fig <- plot_ly(
 fig # call the fig to display it
 
 ```
-Now let's try for each province.
-
-```{r}
-# Let's check the provinces
-
-# initial filters stay the same
-data = df %>% 
-    filter(Stocks == "Total stocks") %>%
-    group_by(GEO, Commodity, year = lubridate::floor_date(Date, "year")) %>% # group the df by region and Commodity for each year
-    summarize(mean = mean(VALUE, na.rm=TRUE, .groups = 'keep')) # take the average of the values in each group we made above
-
-data <- data[-c(1,53),] # the dairy data has data for 1970 and 2022, but the population data does not. Let's drop the first and last row.
-data <- data %>%filter(Commodity == "Cheddar cheese") 
-
-# our list of provinces from the original dataset
-provinces <- unique(df["GEO"])
-
-# some are missing too much data, let's drop them
-remove <- c("Maritime provinces","Prince Edward Island","Nova Scotia","New Brunswick","Saskatchewan","Other Provinces","Atlantic provinces")
-provinces <- provinces[!(provinces$GEO %in% remove),]
-
-# loop over the provinces 
-for (i in 1:nrow(provinces))
-{
-  datatemp <- filter(data, GEO == provinces[i, "GEO"]) # filter for province
-# create a new column called percapita equal to the mean times 1000 (to get kg) divided by the population to get average kg of cheese per person
-datatemp$percapita <- datatemp$mean*1000/dfpop$VALUE 
-
-#create a bar plot
-fig <- plot_ly(
-  datatemp, 
-  x = ~year, # the x-axis will be the year
-  y = ~percapita, # the y-axis will be the yearly mean values of the commodity percapita
-  type = "bar" # the type of plot will be bar
-  ) %>%
-  layout(title=paste("Cheddar Cheese Stock Per Capita in", provinces[i, "GEO"]), xaxis = list(title = "Year"), yaxis = list(title = "kg")) # set the title for the graph and axes.
-print(fig) # call the fig to display it
-} # end loop
-
-```
-
-```{r}
-
-#create a bar plot
-fig <- plot_ly(
-  data, 
-  x = ~year, # the x-axis will be the year
-  y = ~percapita, # the y-axis will be the yearly mean values of the commodity percapita
-  type = "bar" # the type of plot will be bar
-  ) %>%
-  layout(title="Cheddar Cheese Stock Per Capita in Ontario", xaxis = list(title = "Year"), yaxis = list(title = "kg")) # set the title for the graph and axes.
-
-fig # call the fig to display it
-
-```
 
 
 
