@@ -22,13 +22,7 @@ library(lubridate) # for manipulating date-time objects
 ## The Assignment
 In this workshop we will be exploring [Stocks of specified dairy products](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3210000101#tables). 
 
-We will learn and practice how to
-    1. Load data
-    2. Clean data
-    3. Create a plot
-    4. Do some analysis
-    5. Prepare a report
- using Rmarkdown.
+We will learn and practice how to load, clean, analyze and visualize data using Rmarkdown.
 
 ## References 
 - [RPUG R Resources](https://rpug.pages.cloud.statcan.ca/en/resources/r/)
@@ -44,4 +38,4 @@ Contact the workshop organizers or the innovation surge team for technical assis
 If you'd like to showcase your solution send a merge request.
 
 ## Authors and acknowledgment
-To add
+Created by Alexandra McSween for the 2022 Innovation Camp Pilot.
