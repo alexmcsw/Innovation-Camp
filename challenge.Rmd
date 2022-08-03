@@ -51,7 +51,7 @@ In short, "cleaning data" means to prepare it for analysis. Removing empty value
 How might we need to clean this data?
 
 ```{r}
-# drop totally empty columns
+# drop uninteresting columns
 df <- df %>% select(-("STATUS" | "SYMBOL" | starts_with("Classification")))
 
 # there are two date type columns. Let's keep the more precise one.

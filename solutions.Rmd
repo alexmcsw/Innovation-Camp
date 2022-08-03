@@ -29,7 +29,7 @@ knitr::opts_chunk$set(warning = FALSE, message = FALSE)
 ## Instructions
 
 ### 1. Load the data
-Today we will be working with [Stocks of specified dairy products](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3210000101#tables). This data is stored in a CODR (Census something something??) table
+Today we will be working with [Stocks of specified dairy products](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3210000101#tables). This data is stored in a CODR table
 ```{r}
 # Load our data 
 df <- get_cansim("32-10-0001-01")
@@ -51,7 +51,7 @@ In short, "cleaning data" means to prepare it for analysis. Removing empty value
 How might we need to clean this data?
 
 ```{r}
-# drop totally empty columns
+# drop unnecessary columns
 df <- df %>% select(-("STATUS" | "SYMBOL" | starts_with("Classification")))
 
 # there are two date type columns. Let's keep the more precise one.
