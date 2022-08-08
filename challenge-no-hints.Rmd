@@ -51,7 +51,7 @@ In short, "cleaning data" means to prepare it for analysis. Removing empty value
 How might we need to clean this data?
 
 ```{r}
-# drop totally empty columns
+# drop uninteresting columns
 
 
 # there are two date type columns. Let's keep the more precise one.
@@ -158,7 +158,7 @@ Access population data here:https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pi
 ## Further Directions
 
 1. Optimization:
-Data.table is a structure that is faster than the built-in data.frame structure. Can you rewrite the code to make use of this structure instead?
+Data.table is a structure that is faster than the built-in data.frame structure. Can you rewrite the code to make use of this structure instead? In what other ways could we speed up or optimize this script?
 
 2. Collaboration:
 You could put your code on Gitlab and have your colleagues provide feedback or even contribute to your code. Gitlab also provides version control so you can track changes to your project.

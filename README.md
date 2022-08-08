@@ -19,11 +19,11 @@ There are two versions of the coding challenge, one with examples and hints (cha
 
 ![Step 3](/images/step3a.jpg)
 
-4. Leave the target directory as ~ and click choose files.
+4. Leave the target directory as ~ and click choose file.
 
 ![Step 4](/images/step4.jpg)
 
-5. Locate and select the zipped folder we saved earlier. Click open
+5. Locate and select the zipped folder we saved earlier. Click open.
 
 ![Step 5](/images/step5.jpg)
 
@@ -59,10 +59,10 @@ We will learn and practice how to load, clean, analyze and visualize data using 
 
 
 ## Support
-Contact the workshop organizers or the innovation surge team for technical assistance.
+Contact the workshop organizers in chat or the [innovation surge team](mailto:statcan.innovationsurgeteam-equipedappointdelinnovation.statcan@statcan.gc.ca) after the workshop.
 
 ## Contributing
-If you'd like to showcase your solution send a merge request.
+If you'd like to showcase your solution there will be opportunity at the end of the workshop.
 
 ## Authors and acknowledgment
-Created by Alexandra McSween for the 2022 Innovation Camp Pilot.
+Created by Alexandra McSween for the 2022 Innovation Camp Pilot. Contributions and support from Tabitha Wiliams, Kate Burnett-Isaacs, Brittny Vongdara and Philippe Bisaillon.
