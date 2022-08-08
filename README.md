@@ -8,19 +8,34 @@ There are two versions of the coding challenge, one with examples and hints (cha
 
 ## Adding this repo to your AAW
 1. Within this repository, click the download button in the upper right.
+
  ![Step 1](/images/step1.jpg)
+
 2. Save the zip file to somewhere you can easily locate it.
+
 ![Step 2](/images/step2.jpg)
+
 3. In your AAW Kubeflow RStudio server locate the upload files button at the top of the lower right box.
-![Step 3](/images/step3.jpg)
+
+![Step 3](/images/step3a.jpg)
+
 4. Leave the target directory as ~ and click choose files.
+
 ![Step 4](/images/step4.jpg)
+
 5. Locate and select the zipped folder we saved earlier. Click open
+
 ![Step 5](/images/step5.jpg)
+
 6. Click upload.
+
 ![Step 6](/images/step6.jpg)
+
 7. Note that you should now have a folder called innovation-camp-main containing all the files of this directory.
-![Step 7](/images/step7.jpg)
+
+![Step 7](/images/step7a.jpg)
+![Step 7](/images/step7b.jpg)
+
 ## Installation
 If you are working in AAW, all packages are readily available to you. Otherwise, the following packages will need to be installed:
 
