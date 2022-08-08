@@ -27,7 +27,7 @@ There are two versions of the coding challenge, one with examples and hints (cha
 
 ![Step 5](/images/step5.jpg)
 
-6. Click upload.
+6. Click OK.
 
 ![Step 6](/images/step6.jpg)
 
